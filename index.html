@@ -22,7 +22,8 @@ onload="if(submitted){window.location='https://thegratefulnessproject.com/submis
     
     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe5mlKt2VB2fd6i8Iz_ijqT44LC-f1eqdp1mG2FCrzADfKzqw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
       <div>
-        <textarea name="entry.2090457924" placeholder="Tell me about something you're grateful for." required></textarea>
+        <textarea name="entry.2090457924" placeholder="Tell me about something you're grateful for." required oninvalid="this.setCustomValidity('Try to think of something!')"
+ oninput="setCustomValidity('')"></textarea>
       </div>
         <div>
     <button type="submit" value="Submit">Submit</button>
